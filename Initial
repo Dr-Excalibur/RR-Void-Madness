@@ -1,4 +1,0 @@
-function "startup"
- while true do
- 
- end
