@@ -11,8 +11,8 @@ function "initial"
     say("Keep in mind that this is intentional")
     os.sleep(2)
     say("If you understand this, please type @apsI Agree@aps. Capitalization matters!")
-    local event code = os.pullEvent("chat.message")
-    if code == "I Agree" then
+    local event confirmation = os.pullEvent("chat.message")
+    if confirmation == "I Agree" then
         say("Excellent! Enjoy your maddening adventure.)
         command.
         tutorial = true
@@ -20,3 +20,16 @@ function "initial"
 end
         --]]
 initial()
+
+quotes = {"Too bad. I thought you were going to last longer than the last player. I guess even computers can be wrong.", "@astSnickers@ast Was that the best you could do?"}
+
+funtion "sarcasm" --This one's going to be a doosy
+    
+    while true do
+        chance = math.random(0,1)
+        if chance== then
+            say()
+        end    
+    end
+end
+        
