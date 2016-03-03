@@ -21,14 +21,30 @@ end
         --]]
 initial()
 
-quotes = {"Too bad. I thought you were going to last longer than the last player. I guess even computers can be wrong.", "@astSnickers@ast Was that the best you could do?"}
+endquotes = {"Too bad. I thought you were going to last longer than the last player. I guess even computers can be wrong.", "*Snickers* Was that the best you could do?", "ERROR: RMCI unresponsive. Red Matter entropy levels reaching critical levels. Structural collapse imminent"}
+sarcasmquotes = {""}
+
+function tablen(T)
+  local count = 0
+  for _ in pairs(T) do
+    count = count + 1 end
+  print(count)
+  return count
+end
+chance = math.random(1,2)
+print(chance)
+max=tablen(endquotes)
+if chance==2 then
+ say(endquotes[math.random(1,max)])    
 
 funtion "sarcasm" --This one's going to be a doosy
     
     while true do
-        chance = math.random(0,1)
-        if chance== then
-            say()
+        chance = math.random(0,10)
+        print chance
+        if chance==5 then
+            say(endquotes(math.random(1,#endquotes-1)))
+            break
         end    
     end
 end
