@@ -28,11 +28,9 @@ function tablen(T)
   local count = 0
   for _ in pairs(T) do
     count = count + 1 end
-  print(count)
   return count
 end
 chance = math.random(1,2)
-print(chance)
 max=tablen(endquotes)
 if chance==2 then
  say(endquotes[math.random(1,max)])    
