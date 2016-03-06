@@ -1,3 +1,0 @@
-import.mods.nei.NEI;
-recipes.remove(<minecraft:wooden_sword>);
-NEI.hide(<minecraft:wooden_sword>);
